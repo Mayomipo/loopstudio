@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Grey200: hsl(0, 0%, 85%);
+}
+body {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p, button {
+    font-family: "Josefin Sans", sans-serif;
+}
+header {
+    padding: 40px;
+    height: 100vh;
+    color: var(--White);
+    background-image: url(./images/desktop/image-hero.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+header a {
+    text-decoration: none;
+    color: var(--White);
+}
+header .text {
+    border: 2px solid var(--White);
+    font-size: 2rem;
+    padding: 30px;
+    margin-top: 150px;
+    width: 450px;
+}
+header h2 {
+    line-height: 1.2;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+#hamburger {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.interactive {
+    display: flex;
+    background-color: var(--White);
+    padding: 60px 80px 70px;
+    padding-top: 100px;
+    align-items: end;
+    /* width: 100%; */
+}
+#h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    font-weight: 200;
+    width: 100%;
+}
+.interactive-img {
+    padding-left: 20px;
+}
+.interactive .vr {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 25px;
+    line-height: 2;
+    padding-top: 80px;
+    padding-left: 60px;
+    position: relative;
+    right: 150px;
+}
+.gallery_section {
+    padding: 50px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#h2_gallery {
+    grid-column: span 3;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-weight: 150;
+}
+#button_gallery {
+    border: 1px solid black;
+    justify-self: end;
+    background-color: var(--White);
+    width: 50%;
+}
+.card {
+    position: relative;
+}
+.card p {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: var(--White);
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 5;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+.child1 {
+    background: url(./images/desktop/image-deep-earth.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.child2 {
+    background: url(./images/desktop/image-night-arcade.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.child3 {
+    background: url(./images/desktop/image-soccer-team.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.child4 {
+    background: url(./images/desktop/image-grid.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.child5 {
+    background: url(./images/desktop/image-from-above.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.child6 {
+    background: url(./images/desktop/image-pocket-borealis.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.child7 {
+    background: url(./images/desktop/image-curiosity.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.child8 {
+    background: url(./images/desktop/image-fisheye.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+footer {
+    background-color: var(--Black);
+    color: var(--White);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.foot {
+    padding-left: 45px;
+    padding: 15px;
+}
+.icon {
+    padding-right: 45px;
+}
+footer ul{
+    padding-top: 15px;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+footer a {
+    text-decoration: none;
+    color: var(--White);
+}
+#copy {
+    font-size: 13px;
+    padding-top: 25px;
+}
+footer li {
+    font-size: 15px;
+}
+.navcard {
+    background-color: black;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    display: none;
+    width: 100vw;
+}
+
+.navcard ul {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 20px;
+}
+.navcard div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navcard a{
+    color: var(--White);
+    text-decoration: none;
+}
+
+
+.show {
+    display: flex;
+}
+
+
+
+@media(max-width: 768px){
+    #hamburger {
+        display: flex;
+    }
+    header {
+        background: url(./images/mobile/image-hero.jpg);
+        width: 100%;
+        padding: 15px;
+    }
+    nav {
+        display: none;
+    }
+    header .text {
+        width: 390px;
+        font-size: 2rem;
+        padding: 15px;
+    }
+    .interactive {
+        flex-direction: column;
+        padding: 15px;
+        width: 100%;
+    }
+    .interactive .vr {
+        width: 110%;
+        position: static;
+    }
+    .interactive {
+        position: relative;
+        width: 100%;
+    }
+    .interactive-img {
+        width: 100%;
+    }
+    .interactive-img img {
+        width: 100%;
+    }
+    .creations .button{
+        display: none;
+    }
+    .gallery_section {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .card p {
+        padding-bottom: 40px;
+    }
+    #h2_gallery {
+        grid-column: inherit;
+    }
+    #button_gallery {
+        order: 1;
+        width: 50%;
+        height: 30px;
+        justify-self: center;
+    }
+    .child1 {
+    background: url(./images/mobile/image-deep-earth.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    .child2 {
+    background: url(./images/mobile/image-night-arcade.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    .child3 {
+    background: url(./images/mobile/image-soccer-team.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    .child4 {
+    background: url(./images/mobile/image-grid.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    .child5 {
+    background: url(./images/mobile/image-from-above.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    .child6 {
+    background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    .child7 {
+    background: url(./images/mobile/image-curiosity.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    .child8 {
+    background: url(./images/mobile/image-fisheye.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center;
+        align-items: center; */
+    }
+}
