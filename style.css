@@ -240,7 +240,7 @@ footer li {
         display: none;
     }
     header .text {
-        width: 390px;
+        width: 100%;
         font-size: 2rem;
         padding: 15px;
     }
